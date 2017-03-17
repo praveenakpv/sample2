@@ -1,0 +1,8 @@
+When(/^I enter my login credentials$/) do
+  step 'I enter my login username'
+  step 'I enter my login password'
+end
+
+When(/^click on the "([^"]*)" button$/) do |arg1|
+  find_button(arg1).click
+end
